@@ -1,38 +1,207 @@
+
+/* Home */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/* Import the font */
+@font-face {
+  font-family: 'Agrandir-Regular'; /* Font family name */
+  src: url('../src/fonts/Agrandir-Regular.otf') format('truetype'); /* URL to the font file */
+}
+
+body{
+  background-color: #16154E;
+}
+
+
+
+/* Apply the font to specific elements */
+.cover_page p {
+  font-family: 'Agrandir-Regular', sans-serif; /* Use the custom font */
+  /* Other styles */
+  
+}
+
+/* App.css */
+.website {
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* Ensure the website fills the entire viewport */
+  font-family: 'Agrandir-Regular', sans-serif; /* Use the custom font */
+  background-color: #16154E;
+}
+
 .App {
-  text-align: center;
+  max-width: 1400px;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cover_page {
+  height: 100%;
+  width: 100%;
+  background-image: url("./Home/Assets/bg.png");
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-position: center; /* Center the background image */
+  /* Add an overlay to increase contrast */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cover_page p {
+  color: white; /* Text color to contrast with the background */
+  font-size: 2rem; /* Adjust font size as needed */
+}
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  height: 70%;
+  margin-left: 1rem;
+  
+}
+
+.heading>p{
+  font-size: 5rem;
+  color: #fff;
+}
+
+.heading>h4{
+  font-size: 5rem;
+  color: #CD86C9;
+}
+
+.sub-heading{
+  margin-top: 10px;
+}
+
+.sub-heading>h3{
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 300;
+  background-color: rgba(179, 170, 255, 0.5); 
+  width: fit-content;
+  border-radius: 5rem;
+}
+
+.sub-heading>p{
+  font-size: 1rem;
+  color: #fff;
+  width: 60%;
+  margin-top: 10px;
+  
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .cover_page p {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.scrollable-content {
+  overflow-y: auto;
+}
+
+/* Home */
+
+
+
+/* Header */
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.left_header{
+  display: flex;
+  flex-direction: row;
+}
+
+.left_header>img{
+  width: 60px;
+}
+
+.right_header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+}
+.left_header>p {
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.right_header>p {
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.right_header>p:hover {
+  color:#CD86C9 ;
+  border-bottom: 2px solid #CD86C9;
+}
+
+.right_header>button {
+  padding: 10px;
+  background-color: #CD86C9;
+  color: #fff;
+  border: 0;
+  font-weight: bold;
+}
+
+.right_header>button:hover {
+  background-color: #fff;
+  color: #CD86C9;
+  border: 0;
+  cursor: pointer;
+}
+
+/*CoverTwo */
+
+.cover_two_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+.cover_two_heading>h2{
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.cover_two_grid_comp{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cover_two_grid_comp>img{
+  width:100px;
+  background-color: #fff;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cover_two_grid_comp>p{
+  text-align: justify;
+  width: 60%;
+  color: #fff;
 }
