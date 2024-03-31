@@ -2,15 +2,17 @@ import React from 'react';
 import './App.css';
 import Header from './Home/Components/Header';
 import CoverTwo from './Home/Components/CoverTwo';
+import Locations from './Home/Components/Locations';
+import Properties from './Pages/Properties';
 
 function App() {
   return (
     <div className='website'>
       <div className='App'>
-        <div className='cover_page'>
+        {/* <div className='cover_page'>
           <Header />
           <div className='heading'>
-            <p>create your safe</p>
+            <p>Create your safe</p>
             <h4>real estate portfolio</h4>
             <div className='sub-heading'>
               <h3>&nbsp;  invest in growing physical assets  &nbsp; </h3>
@@ -21,6 +23,8 @@ function App() {
 
         </div>
         <CoverTwo />
+        <Locations /> */}
+        <Properties />
       </div>
 
     </div>

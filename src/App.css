@@ -14,10 +14,6 @@
   src: url('../src/fonts/Agrandir-Regular.otf') format('truetype'); /* URL to the font file */
 }
 
-body{
-  background-color: #16154E;
-}
-
 
 
 /* Apply the font to specific elements */
@@ -31,9 +27,11 @@ body{
 .website {
   display: flex;
   justify-content: center;
-  height: 100vh; /* Ensure the website fills the entire viewport */
+  height: 90vh; /* Ensure the website fills the entire viewport */
   font-family: 'Agrandir-Regular', sans-serif; /* Use the custom font */
   background-color: #16154E;
+  border: 2px solid #16154E;
+
 }
 
 .App {
@@ -173,6 +171,11 @@ body{
 }
 
 /*CoverTwo */
+.cover_two{
+  background-color: #16154E;
+  padding: 1rem;
+}
+
 
 .cover_two_grid{
   display: grid;
@@ -204,4 +207,82 @@ body{
   text-align: justify;
   width: 60%;
   color: #fff;
+}
+
+
+/* Locations */
+
+.locations{
+  margin-top: 2rem;
+}
+
+.locations>h2{
+  color: #16154E;
+  background-color: #fff;
+  text-align: center;
+}
+.location_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  padding: 1rem;
+}
+
+.location_grid_comp{
+  color: #16154E;
+  background-color:#f8f8f8 ;
+  margin: 1rem;
+  box-shadow: 5px 5px 5px -7px #16154E;
+  padding: 1rem;
+  border-bottom: 2px solid #fcba03;
+ 
+}
+.location_grid_comp>h3{
+  text-align: center;
+}
+
+
+/*property_grid */
+
+.properties{
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+
+.property_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap:1rem
+}
+.property_comp{
+  width: 100%;
+  box-shadow: 5px 5px 5px -7px #16154E;
+  
+}
+.propert_img>img{
+  width: 100%;
+  
+}
+
+
+.property_details>h2{
+  color:#16154E;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.property_details_grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  padding: 1rem;
+}
+
+.proeprty_details_comp{
+  margin-bottom: 1rem;
+}
+
+.proeprty_details_comp>h5{
+  color: #ccc;
+}
+.proeprty_details_comp>p{
+  color: #16154E;
 }
